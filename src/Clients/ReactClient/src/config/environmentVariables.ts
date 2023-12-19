@@ -56,83 +56,9 @@ const stage: IEnvironment = {
     ...common,
 };
 
-const demo: IEnvironment = {
-    ...common,
-    serverGraphqlAddress: 'http://demo.crm.server.vpdev.se/graphql',
-    serverWebsocketGraphqlAddress: 'ws://demo.crm.server.vpdev.se/graphql',
-};
-
-const prod: IEnvironment = {
-    ...common,
-	applicationAddress: 'https://crm.voidpointer.se',
-    applicationClientId: 'VPBase_Crm_ApplicationClient_WebReact',
-    applicationLogoLocation: 'https://voidpointer.se/upload/brand/logo.png',
-    applicationLogoSmallLocation: 'https://voidpointer.se/upload/brand/logo.png',
-    applicationName: 'CRM',
-    applicationTabTitle: 'VoidPointer CRM',
-    applicationScope: 'Crm',
-
-    serverAddress: 'https://crmserver.voidpointer.se',
-    serverGraphqlAddress: 'https://crmserver.voidpointer.se/graphql',
-    serverWebsocketGraphqlAddress: 'wss://crmserver.voidpointer.se:443/graphql',
-
-    authAddress: 'https://auth.voidpointer.se',
-    authCookieDomain: '.voidpointer.se',
-    authCookiePrefix: 'VP_',
-    authCookieMaxAge: 100000000,
-
-    themeMenuHeaderColor: '#428bca',
-};
-
-const cciprod: IEnvironment = {
-    ...common,
-    applicationAddress: 'https://crm.corecode.se',
-    applicationClientId: 'VPBase_Crm_ApplicationClient_WebReact',
-    applicationLogoLocation: 'https://corecode.se/upload/Loggor/corecode-logo_white.png',
-    applicationLogoSmallLocation: 'https://corecode.se/upload/Loggor/corecode-logo_small_white.png',
-    applicationName: 'CRM',
-    applicationTabTitle: 'CoreCode CRM',
-    applicationScope: 'Cci',
-
-    serverAddress: 'https://crmserver.corecode.se',
-    serverGraphqlAddress: 'https://crmserver.corecode.se/graphql',
-    serverWebsocketGraphqlAddress: 'wss://crmserver.corecode.se:443/graphql',
-
-    authAddress: 'https://auth.corecode.se',
-    authCookieDomain: '.corecode.se',
-    authCookiePrefix: 'CCI_',
-
-    themeMenuHeaderColor: '#357641',
-};
-
-const vpazureprod: IEnvironment = {
-    ...common,
-    applicationAddress: 'https://crm.voidpointer.se',
-    applicationClientId: 'VPBase_Crm_ApplicationClient_WebReact',
-    applicationLogoLocation: 'https://voidpointer.se/upload/brand/void-1.jpg',
-    applicationLogoSmallLocation: 'https://voidpointer.se/upload/brand/logo-footer.png',
-    applicationName: 'CRM',
-    applicationTabTitle: 'Void Pointer CRM',
-    applicationScope: 'VPBase',
-
-    serverAddress: 'https://crmserver.voidpointer.se',
-    serverGraphqlAddress: 'https://crmserver.voidpointer.se/graphql',
-    serverWebsocketGraphqlAddress: 'wss://crmserver.voidpointer.se:443/graphql',
-
-    authAddress: 'https://auth2.voidpointer.se',
-    authCookieDomain: '.voidpointer.se',
-    authCookiePrefix: 'VP_',
-
-    themeMenuHeaderColor: '#357641',
-};
-
 const environments = {
     dev: dev,
     stage: stage,
-    demo: demo,
-    prod: prod,
-    cciprod: cciprod,
-	vpazureprod: vpazureprod,
 };
 
 const environmentVariables: IEnvironment = (environments as any)[vars.REACT_APP_ENVIRONMENT as any];
