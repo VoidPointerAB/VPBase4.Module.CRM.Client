@@ -1,0 +1,64 @@
+.vp-form .form-group {
+    display: flex;
+}
+
+.vp-form .form-group>div {
+    width: 100%;
+}
+
+/* Vertical */
+
+.vp-form.vertical-form .form-group,
+.vp-form.horizontal-form .form-group.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vp-form.vertical-form .form-group>label,
+.vp-form.horizontal-form .form-group.vertical>label {
+    width: inherit;
+    text-align: inherit;
+}
+
+/* Horizontal */
+
+.vp-form.horizontal-form .form-group,
+.vp-form.vertical-form .form-group.horizontal {
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.vp-form.horizontal-form .form-group>label,
+.vp-form.vertical-form .form-group.horizontal>label {
+    width: 40%;
+    text-align: right;
+}
+
+@media (max-width: 767.98px) {
+    .vp-form.horizontal-form .form-group,
+    .vp-form .form-group.horizontal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .vp-form.horizontal-form .form-group>label,
+    .vp-form .form-group.horizontal>label {
+        width: inherit;
+        text-align: inherit;
+    }
+}
+
+/* -------------------------------------------------*/
+
+/* .vp-form .form-group.horizontal input.form-control {
+    display: flex;
+    flex-grow: 1;
+} */
+
+.vp-form label.control-label {
+    font-weight: bold;
+}
+
+.vp-form .validation-error {
+    margin-top: 5px;
+    color: red;
+}

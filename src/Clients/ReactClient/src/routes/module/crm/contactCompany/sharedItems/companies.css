@@ -1,0 +1,26 @@
+/************************************************************
+        Styles for contact persons card view
+
+************************************************************/
+.initials-person {
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgba(1, 65, 99, 0.5);
+    font: normal bold 1.6em/100% "Open Sans", sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    letter-spacing: -1px;
+} 
+
+/************************************************************
+        Tags and Segment special for contact company
+
+************************************************************/
+.tag-nolink {
+    cursor: default!important;
+}

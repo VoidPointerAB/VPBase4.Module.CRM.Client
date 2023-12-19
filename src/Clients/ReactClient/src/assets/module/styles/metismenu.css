@@ -1,0 +1,95 @@
+.sidebar-nav {
+    background: #2f4050;
+}
+
+.metismenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.metismenu a {
+    position: relative;
+    display: block;
+    color: #adb5bd;
+    outline-width: 0;
+    transition: all .3s ease-out;
+}
+
+.metismenu a:hover,
+.metismenu a:focus,
+.metismenu a:active {
+    color: white;
+}
+
+.metismenu a svg {
+    margin-right: 10px;
+}
+
+.metismenu>li.active {
+    border-left: none;
+}
+
+.metismenu li a.active {
+    color: #ffffff;
+    border-left: 4px solid #19aa8d;
+    background: #293846;
+}
+
+/* ARROW FOR SECOND/THIRD LEVEL */
+
+.metismenu .has-arrow::after {
+    position: absolute;
+    content: '';
+    width: .5em;
+    height: .5em;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: initial;
+    right: 1em;
+    transform: rotate(-45deg) translate(0, -50%);
+    transform-origin: top;
+    top: 50%;
+    transition: all .3s ease-out;
+}
+
+.metismenu .active>.has-arrow:after,
+.metismenu .has-arrow[aria-expanded=true]:after {
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+/* NAV-HEADER */
+
+/* .nav-header a {
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.nav-header ul {
+    background: white;
+}
+
+.nav-header .profile-element {
+    text-align: center;
+}
+
+.nav-header ul a {
+    color: black;
+    padding: 3px 20px;
+} */
+
+/* WHEN MINIMIZED */
+
+body.mini-navbar .metismenu ul {
+    width: 70px;
+}
+
+body.mini-navbar .nav-label,
+body.mini-navbar .navbar-default li.second-level .has-arrow:after {
+    display: none;
+}

@@ -1,0 +1,81 @@
+.container {
+    display: block;
+    position: relative;
+    height: 38px;
+    width: 38px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .starCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38px;
+    width: 38px;
+    border: 1px solid #e5e6e7;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .starCheckmark {
+    border: 1px solid #2D8F7B;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .starCheckmark {
+    background-color: #2D8F7B;
+    border: 1px solid #2D8F7B;
+  }
+  
+  /* Create the checkmark/indicator (when not checked) */
+  .starCheckmark:after {
+    position: absolute;
+    width:38px;
+    height:38px;
+    margin-top:-1px;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    visibility:visible;
+    color:lightgrey;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .starCheckmark:after {
+    display: flex;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container input:checked ~ .starCheckmark:after {
+    width:38px;
+    height:38px;
+    margin-top:-1px;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    position: absolute;
+    color:#f8ac59;
+  }

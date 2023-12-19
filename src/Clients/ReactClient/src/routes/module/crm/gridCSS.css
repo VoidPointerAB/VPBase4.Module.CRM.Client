@@ -1,0 +1,131 @@
+/* autoprefixer grid: on */
+.grid-container {
+    display: grid!important;
+    -ms-grid-columns: 1fr 1fr 80px;
+    grid-template-areas: 
+    "search matchingentities ." 
+    "latestactivity latestperson . "
+    "latestactivity latestcompany ." 
+    "latestactivity latestcompany . "
+    "latestactivity . . "
+    "latestactivity . add";
+    grid-template-columns: 1fr 1fr 80px;
+    -ms-grid-rows: 1fr 15px !important;
+    grid-gap: 15px;
+}
+
+.add {
+    grid-area: add ;
+}
+
+.search {
+    grid-area: search;
+}
+.matching-e{
+    grid-area: matchingentities;
+}
+
+.latest-a {
+    grid-area:  latestactivity;
+    -ms-grid-row-span: 20;
+}
+
+.latest-p {
+    grid-area: latestperson;
+}
+
+.latest-c {
+    grid-area: latestcompany;
+}
+
+@media (max-width: 1420px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 80px;
+        grid-template-areas: 
+        "matchingentities matchingentities ."
+        "search search ."              
+        "latestactivity latestactivity ."             
+        "latestperson latestperson . " 
+        " latestcompany latestcompany . ";
+    }
+    .matching-e {
+        grid-area: matchingentities;
+    }
+    .search {
+        grid-area: search;
+    }
+    .latest-a {
+        grid-area: latestactivity;
+    }
+    .latest-p {
+        grid-area:  latestperson;
+    }
+    .latest-c {
+        grid-area:  latestcompany;
+    }
+    .add {
+    grid-area: add;
+    }
+}
+
+
+@media (max-width: 1520px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 80px;
+        grid-template-areas:  
+    "search matchingentities ." 
+    "latestactivity latestperson . "
+    "latestactivity latestcompany ." 
+    "latestactivity latestcompany . "
+    "latestactivity . . "
+    "latestactivity . add";
+    }
+    .matching-e {
+        grid-area: matchingentities;
+    }
+    .search {
+        grid-area: search;
+    }
+    .latest-a {
+        grid-area: latestactivity;
+    }
+    .latest-p {
+        grid-area:  latestperson;
+    }
+    .latest-c {
+        grid-area:  latestcompany;
+    }
+    .add {
+    grid-area: add;
+    }
+}
+
+@media (max-width: 1199px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "matchingentities"
+        "search" 
+        "latestactivity" 
+        "latestperson" 
+        "latestcompany";
+        grid-gap: 0;
+        grid-row-gap: 15px;
+    }
+    .matching-e {
+        grid-area: matchingentities
+    }
+    .search {
+        grid-area: search;
+    }
+    .latest-a {
+        grid-area:  latestactivity;
+    }
+    .latest-p {
+        grid-area: latestperson;
+    }
+    .latest-c {
+        grid-area:  latestcompany;
+    }
+}
+

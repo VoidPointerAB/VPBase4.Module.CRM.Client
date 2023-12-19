@@ -1,0 +1,15 @@
+.propertyManager {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttomColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+.buttomColumn button {
+    width: 40px;
+}

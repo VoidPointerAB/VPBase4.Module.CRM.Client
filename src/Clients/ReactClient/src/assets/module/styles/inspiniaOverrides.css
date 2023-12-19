@@ -1,0 +1,10 @@
+/* BASE INSPINIAOVERRIDES START */
+
+@media (max-width: 768px) {
+    .navbar-static-side {
+        position: absolute;
+        display: block;
+    }
+}
+
+/* BASE INSPINIAOVERRIDES END */

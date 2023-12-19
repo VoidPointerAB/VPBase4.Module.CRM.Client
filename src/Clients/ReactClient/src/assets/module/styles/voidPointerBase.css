@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/************************************************************
+
+        React tab styles for all forms
+
+************************************************************/
+
+.tab-ul {
+    padding: 0; 
+    margin: 0 auto;
+    border-bottom: none!important;
+}
+.tab-link.nav-item.react-tabs__tab--selected {
+    color: #2b8d94;
+    background-color: transparent;
+    border-color: transparent transparent #edf6f7;
+    border-bottom: 4px solid !important;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: none!important;
+}
+.tab-link { border-bottom: 1px solid !important; }
+
+.nav-link.nav-item{
+    cursor: pointer;
+    color: #2b8d94;
+    font-size: 1.1em;
+    border-color: none;
+    border: none; 
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.react-tabs__tab-panel--selected { margin: 0; }
+.react-tabs__tab--selected { border-radius: 0; }
+
+
+.react-tabs__tab--disabled{
+    cursor: default!important;
+    color:lightgrey!important;
+    border-color: lightgray;
+}
+
+@media screen and (max-width: 768px) { 
+    .react-tabs__tab-panel--selected { margin: 0; }
+    .tab-ul { border: none; }
+
+    .tab-link.nav-item.react-tabs__tab--selected {
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color: #2b8d94;
+        border-bottom: 1px solid #2b8d94 !important;
+        color: white;
+    } 
+
+    .nav-link.nav-item { font-size: 1.1em; }
+ }
+
+.border-bt-VPBase-form {
+    border-bottom: 1px solid  rgb(180, 180, 180);
+}
+
+.border-bt-VPBase-form:last-of-type{
+    border-bottom: none;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+::placeholder {
+    color: rgb(180, 180, 180) !important;
+}
+
+/* Internet Explorer 10-11 */
+
+:-ms-input-placeholder {
+    color: rgb(180, 180, 180) !important;
+}
+
+/* Microsoft Edge */
+
+::-ms-input-placeholder {
+    color: rgb(180, 180, 180) !important;
+}

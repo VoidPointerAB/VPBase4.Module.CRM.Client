@@ -1,0 +1,42 @@
+.dataTables-container .dataTables_length {
+    padding-top: 2px;
+}
+
+.dataTables-container .dataTables_paginate .pagination {
+    float: right;
+}
+
+.dataTables-container .multiple-items > div {
+    margin-right: 30px;
+}
+
+.dataTables-container .multiple-items > div:last-child {
+    margin-right: 0;
+}
+
+.dataTables-container .multiple-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.dataTables-container .multiple-items select {
+    height: 100px;
+}
+
+.dataTables-container table {
+    padding-top: 5px;
+    border-top: 1px solid #e5e6e7;
+}
+
+.truncate {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.truncated {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

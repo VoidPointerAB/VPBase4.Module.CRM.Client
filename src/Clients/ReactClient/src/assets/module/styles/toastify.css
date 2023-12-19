@@ -1,0 +1,19 @@
+.Toastify__toast.Toastify__toast--success {
+    background: var(--success)
+}
+
+.Toastify__toast.Toastify__toast--error {
+    background: var(--danger)
+}
+
+.Toastify__toast.Toastify__toast--warning {
+    background: var(--warning)
+}
+
+.Toastify__toast.Toastify__toast--info {
+    background: var(--info)
+}
+
+.Toastify__toast {
+    border-radius: 5px;
+}

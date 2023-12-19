@@ -1,0 +1,15 @@
+.list {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.list ul {
+    min-height: 200px;
+    max-height: 400px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    overflow-y: auto;
+}

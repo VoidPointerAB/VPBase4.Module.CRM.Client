@@ -1,0 +1,23 @@
+.item {
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.item label {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 3em;
+}
+
+.item a {
+    color: white;
+    font-weight: 600;
+    padding: 1px 0;
+}
+
+.item a:hover {
+    color: white;
+    padding-bottom: 0;
+    border-bottom: 1px solid white;
+}

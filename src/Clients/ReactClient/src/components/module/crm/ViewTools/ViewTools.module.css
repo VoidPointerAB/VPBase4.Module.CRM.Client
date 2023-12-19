@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container button {
+    margin-right: 0.5rem;
+    height: 38px;
+}
+
+.container button:last-child {
+    margin-right: 0;
+}

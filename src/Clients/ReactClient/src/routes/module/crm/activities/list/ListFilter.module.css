@@ -1,0 +1,36 @@
+#container,
+.filterGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container {
+    margin-bottom: 1rem;
+}
+
+#container > * {
+    margin-right: 1rem;
+}
+
+#container > *:last-child {
+    margin-right: 0;
+}
+
+.filterGroup label {
+    margin-bottom: 0;
+    margin-right: 0.3rem;
+}
+
+.button {
+    height: 38px;
+}
+
+.select {
+    max-width: 250px;
+}
+
+.date {
+    max-width: 120px;
+    text-align: center;
+}

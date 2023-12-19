@@ -1,0 +1,15 @@
+#logout {
+    cursor: pointer;
+    display: block;
+    color: #999c9e;
+    font-size: 14px;
+    font-weight: 600;
+    height: 60px;
+    line-height: 21px;
+    min-height: 50px;
+    padding: 20px 10px;
+}
+
+#logout:hover {
+    color: #777a7b;
+} 

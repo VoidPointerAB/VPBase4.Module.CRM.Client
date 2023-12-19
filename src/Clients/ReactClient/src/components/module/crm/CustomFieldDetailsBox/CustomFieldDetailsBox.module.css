@@ -1,0 +1,34 @@
+.mainSection {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e7eaec;
+}
+
+.mainSection:last-child {
+    border-bottom: 0;
+}
+
+.mainSection .title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.mainSection .field {
+    padding-left: 15px;
+}
+
+.subSection {
+    margin-bottom: 0.8em;
+}
+
+.subSection .title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.mainSection .field {
+    padding-left: 15px;
+}
+
+.field strong {
+    margin-right: 0.5em;
+}

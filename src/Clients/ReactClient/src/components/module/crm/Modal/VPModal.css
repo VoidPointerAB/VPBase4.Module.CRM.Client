@@ -1,0 +1,64 @@
+/* 
+DEFAULTS
+
+.vp-modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+.vp-modal-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.vp-modal {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+}
+
+@media (max-width: 767.98px) {
+    .vp-modal {
+        width: 98%;
+    }
+}
+
+.vp-modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay {
+    /* Make sure the modal is on top of side menu */
+    z-index: 3000;
+}
+
+.ReactModal__Body--open {
+    /* Prevent scrolling on rest of page when modal is open */
+    overflow: hidden;
+}

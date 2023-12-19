@@ -1,0 +1,33 @@
+.exportTemplates {
+    max-width: 1000px;
+}
+
+.exportTemplates button {
+    height: 38px;
+}
+
+.selectWrapper {
+    width: 400px;
+    display: inline-block;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonContainer > * {
+    margin-left: 10px;
+}
+
+.buttonContainer > *:first-child {
+    margin-left: 0;
+}
+
+.buttonSeparator {
+    display: inline-block;
+    width: 2px;
+    height: 38px;
+    border-right: 1px solid rgba(0,0,0,.1);
+}

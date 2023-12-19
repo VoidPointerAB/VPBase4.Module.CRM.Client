@@ -1,0 +1,9 @@
+.breadcrumb-item:last-of-type{
+    font-weight:bold;
+}
+
+@media screen and (max-width: 429px) {
+    .breadcrumb-item > a {
+        font-size: 11px;
+    }
+}

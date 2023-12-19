@@ -1,0 +1,37 @@
+.content {
+    max-height: 240px;
+}
+
+.content hr {
+    border-color: white
+}
+
+.appName {
+    margin-top: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.tenantName, .loggedInName {
+    font-size: 14px;
+}
+
+.appName, .tenantName, .loggedInName {
+    text-align: center;
+    color: white !important;
+}
+
+.dropdownMenu {
+    padding: 5px;
+}
+
+.dropdownMenu li {
+    padding: 3px 20px;
+    margin: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+    background-color: #f5f5f5;
+}

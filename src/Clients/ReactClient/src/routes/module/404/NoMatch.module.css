@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.header {
+    font-size: 17em;
+    border-bottom: solid 4px #2d8f7b;
+}
+
+.subHeader {
+    font-size: 3em;
+}
+
+.message {
+    font-size: 13pt;
+    width: 18%;
+    min-width: 350px;
+    text-align: center;
+}
+
+.imageBottom {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top: -65px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 12em;
+        border-bottom: solid 4px #2d8f7b;
+    }
+    .subHeader {
+        font-size: 2em;
+    }
+    .message {
+        font-size: 12pt;
+        width: 90%;
+        min-width: 0;
+    }
+    .container {
+        top: -45px;
+    }
+    .imageBottom {
+        top: -45px;
+    }
+}

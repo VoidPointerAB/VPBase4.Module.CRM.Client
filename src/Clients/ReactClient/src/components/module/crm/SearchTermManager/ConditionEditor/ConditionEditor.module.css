@@ -1,0 +1,72 @@
+.addedSearchTerm {
+    display: flex;
+    margin-bottom: 0.8em;
+    margin-right: 0.8em;
+}
+
+.addedSearchTerm > * {
+    padding: 0.4em 0.5em;
+    background-color: #e5e6e7;
+}
+
+.conditionModifier.has {
+    background-color: #28a745;
+}
+
+.conditionModifier.has::after {
+    content: 'Has';
+    color: white;
+}
+
+.conditionModifier.hasNot {
+    background-color: #dc3545;
+}
+
+.conditionModifier.hasNot::after {
+    content: 'Has not';
+    color: white;
+}
+
+.removeIcon {
+    padding: 0.4em 0.8em;
+    cursor: pointer;
+}
+
+.removeIcon:hover {
+    color: white;
+    background-color: #dc3545;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonContainer > div {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #e5e6e7;
+}
+
+.buttonContainer > div:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+}
+
+.prepend button {
+    border-color: #e5e6e7 !important;
+    background-color: white !important;
+    color: #6c757d !important;
+    box-shadow: none !important;
+}
+
+.prepend button.greenOutline {
+    box-shadow: 0 0 0 0.1rem #28a745 !important;
+    z-index: 100 !important;
+}
+
+.prepend button.redOutline {
+    box-shadow: 0 0 0 0.1rem #dc3545 !important;
+    z-index: 100 !important;
+}

@@ -1,0 +1,723 @@
+/************************************************************
+            Icons, CRM System
+
+************************************************************/
+
+.ibox-star, .ibox-trash, .ibox-pen, .ibox-plus, .card-edit, .widget-popover, .remove-company, .edit-company, .edit-activity, .new-person, .remove-person, .remove-activity, .edit-person, .new-activity { 
+    cursor: pointer;
+    color: lightgray; 
+    padding:0 8px;
+    font-size:1em;
+}
+
+.ibox-star-active {
+    padding: 0 8px;
+}
+
+.ibox-star, .ibox-star-active, .remove-company, .edit-company, .new-person, .remove-person, .edit-person, .edit-activity, .new-activity, .ibox-plus, .ibox-trash, .ibox-pen { font-size: 1.2em; }
+.ibox-star:hover, .ibox-star-active { color: #f8ac59!important; }
+.ibox-trash:hover, .remove-company:hover, .remove-person:hover, .remove-activity:hover { color: #ed5565; }
+.ibox-pen:hover, .ibox-plus:hover, .edit-person:hover, .new-person:hover, .edit-company:hover, .edit-activity:hover, .title-text-icon a:hover, .details-link, .new-activity:hover  { color: #19aa8d!important;  }
+
+
+/************************************************************
+    Styles for badges
+
+************************************************************/
+.badge.badge-person:before, .badge.badge-activity:before, .badge.badge-company:before { 
+    padding-right: 5px;
+    font-family: 'Font Awesome 5 Free';
+}
+.badge.badge-person:before { 
+    content: "\f007" ;
+}
+.badge.badge-activity:before { 
+    content: "\f073" ;
+}
+.badge.badge-company:before { 
+    content: "\f1ad" ;
+}
+
+
+.badge {
+    font-size:0.9em!important;
+    padding: 4px!important;
+    cursor: pointer;
+}
+
+.details-link { cursor: pointer; }
+.icon-p { padding:3px; }
+
+.popover-hide-active:active {
+    box-shadow: none;
+}
+
+/************************************************************
+    Dashboard
+
+************************************************************/
+.sticky {
+    position:sticky;
+    z-index:100;
+
+}
+.flexbus-border {
+    border-width: 1px 1px 1px 1px!important;
+    border-style: solid!important;
+    border-color: #e7eaec!important;
+}
+.flexbus {
+    display:flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+}
+.flexbus-col {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.flexbus-row {
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.bg-color {
+    background:#117a8b!important;
+}
+.flexbus > h3, .flexbus-col > h3 {
+    font-size: 13px;
+    margin: 0 auto 15px auto!important;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:#ffffff;
+}
+.flexbus-links {
+    display:flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* margin: 0 10px 0 10px; */
+    color:white;
+}
+/* .flexbus-links:first-of-type {
+    margin: 0 10px 0 0;
+}
+.flexbus-links:last-of-type {
+    margin: 0 0 0 10px;
+} */
+
+.description-text {
+    width: 90%;
+    text-align: left;
+}
+
+.link-widget {
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/************************************************************
+Tags and Segment, CRM System
+
+************************************************************/
+.tag.no-link { cursor: default; }
+.tag { cursor: pointer; }
+
+.tag, .segment {
+    font-weight:bold;
+    font-size:1em;
+    color:#19aa8d;
+}
+.tag:after, .segment:after { 
+    padding-right:5px;
+    content: "," 
+}
+.tag:before { content: "#" ; }
+.tag:last-of-type:after, .segment:last-of-type:after { content: "" }
+
+.segment-footer, .tags-footer { 
+    min-height:40px;
+    font-size: 1.1em!important; 
+}
+
+/************************************************************
+        Modals, Bootstrap Gutters and Iboxes
+
+************************************************************/
+.no-gutters { width:100%; }
+.vp-modal .ibox { margin-bottom:0; }
+.cards .ibox { padding:0; }
+
+/************************************************************
+        Styles for card list views
+
+************************************************************/
+.popover-body {
+    display:flex;
+    flex-direction: column;
+}
+.contact-box { 
+    font-size:1em; 
+}
+.contact-box .ibox-content:first-of-type { border-top:none; }
+.contact-box .ibox-content:nth-child(2) { border-top:1px solid #e7eaec; }
+
+.contact-box .card-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    padding-bottom:12px;
+}
+
+.contact-box .card-title h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin:0;
+}
+
+.contact-box .card-address p { margin:5px 0 0 0; }
+
+.contact-box .card-footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0;
+    min-height:40px;
+}
+
+.contact-box .tag { font-size:1.1em; }
+
+.title-text-icon {
+    display:flex;
+    align-items:center;
+}
+.title-text-icon a {
+    color: #676a6c;
+}
+
+.filter-show {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 10px;
+}
+
+.btn-chevron {
+    background-color: transparent;
+    border: none;
+    color: lightgray;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-chevron:focus {
+    outline: none;
+}
+
+.card-main-content {
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height:194px;
+}
+
+.card-avatar-location {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex: 1 1 10%;
+    -ms-flex: 1 1 25%;
+}
+
+.cards-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    flex: 2 1 auto;
+    margin:0 0 0 15px;
+    font-size: 0.98em;
+}
+
+.clear-search {
+    cursor: pointer;
+    padding:0 3px 0 8px;
+}
+
+.list-filter-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.view-tools-container{
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+}
+
+.card-search {
+    width: 70%;
+    max-width: 400px;
+}
+
+.card-search input {
+    font-size: 1.03em!important;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+.input-group-text {
+    border-radius: 0!important;
+    cursor: pointer;
+    border-color: #e5e6e7 !important;
+    border-style: solid!important;
+    border-width: 1px 1px 1px 0!important;
+}
+
+.btn { 
+    border-radius: 0!important;
+    font-size: inherit; 
+}
+
+.clear-btn-filter{
+    width: 30%;
+    max-width: 80px;
+    margin-left: 28px;
+}
+
+@media (min-width: 1900px) {
+    .card-avatar-location { -ms-flex: 1 1 10%; }
+}
+
+@media (max-width: 1518px) {
+    .cards-info { margin:15px 0 0 15px; }
+}
+
+@media (max-width: 1224px){
+    .small-screen-filter-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .big-screen-filter-content {
+        display: none
+    }
+    .search-input {
+        display: none
+    }
+}
+
+@media (min-width: 1224px){
+    .small-screen-filter-content {
+        display: none
+    }
+    .big-screen-filter-content {
+        display: flex
+    }
+}
+
+@media (max-width: 1039px) {
+    .filter-show {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%
+    }
+    .options-select {
+        width: 77%;
+    }
+}
+
+@media (max-width: 790px) {
+    .clear-btn-filter{
+        max-width: 60px
+    }
+}
+
+@media (max-width: 618px) {
+    .clear-btn-filter { margin-left: 8px; }
+}
+
+@media (max-width: 600px) {
+    .filter-show {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .clear-btn-filter {
+        margin: 0;
+        margin-left: auto;
+    }
+    .card-search {
+        width: 100%;
+        max-width: none;
+    }
+    .list-filter-p-container {
+        flex-wrap: wrap
+    }
+    .options-select {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .view-tools-container {
+        justify-content: flex-start;
+        width: 40%;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .list-filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-group {
+        margin-bottom: 10px;
+    }
+    .view-tools-container {
+        margin-bottom: 8px;
+    }
+    /* .card-search, .options-select {
+        width: 90%;
+        margin-bottom: 8px;
+    } */
+}
+
+/************************************************************
+        Initials, circle with letters
+
+************************************************************/
+.initials {
+    width:100px;
+    height:100px;
+    min-width:80px;
+    min-height:80px;
+    border-radius:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(1, 65, 99, 0.5);
+    font: normal bold 3em/100% "Open Sans", sans-serif;
+    text-align: center;
+    color: white;
+}  
+
+
+/************************************************************
+
+        React tab styles for all forms & detail views
+
+************************************************************/
+.activity-button-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap
+}
+div.activity-input {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:10px;
+    position:relative;
+}
+div.activity-input label {
+    width:120px;
+    padding:8px 8px;
+    text-align: center;
+    background: white;
+    color:black;
+    margin:0;
+}
+div.activity-input input {
+    position: none;
+    width:1px;
+    opacity: 0;
+}
+div.activity-input input[type="radio"]:checked + label {
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    font-weight:bold;
+}
+
+.options-activity {
+    color: rgb(165, 165, 165);
+    font-style: italic;
+}
+@media (max-width: 1199px){
+    div.activity-input label {
+        width:auto;
+    }
+    .activity-button-container {
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+
+    div.activity-input {
+        margin-right:10px;
+    }
+    .activity-form, .activity-form .form-group, 
+    .activity-form div div .form-group div > textarea.form-control, 
+    .react-datepicker-wrapper input {
+        font-size:1.1em!important;
+    }
+    .activity-col {
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0 0 1px 0;
+        margin-bottom:15px;
+    }
+    .activity-col .form-group {
+        margin-bottom:5px;
+    }
+}
+  div.activity-input input[type="radio"] + label:before {
+    margin-right:5px;
+    font-family: "Font Awesome 5 Free";
+  }
+  div.activity-input input[type="radio"].type-meeting:checked + label, input[type="radio"].type-meeting + label:before {
+    border-color: #6DA0C2;
+    color: #6DA0C2;
+    content: "\f0c0";
+  }
+  div.activity-input input[type="radio"].type-phone:checked + label, input[type="radio"].type-phone + label:before {
+    border-color: #72BBAD;
+    color: #72BBAD;
+    content: "\f095";
+  }
+  div.activity-input input[type="radio"].type-email:checked + label, input[type="radio"].type-email + label:before {
+    border-color: #9D80C0;
+    color: #9D80C0;
+    content: "\f1fa";
+  }
+  div.activity-input input[type="radio"].type-note:checked + label, input[type="radio"].type-note + label:before {
+    border-color: #DEA721;
+    color: #DEA721;
+    content: "\f249";
+  }
+  div.activity-input input[type="radio"].type-other:checked + label, input[type="radio"].type-other + label:before {
+    border-color: #C96781;
+    color: #C96781;
+    content: "\f073";
+  }
+  div.activity-input input[type="radio"] + label {
+    border: 3px solid lightgray;
+    color: #000000;
+    font-size:1em
+  }
+
+small {
+    font-size: 65%!important;
+    color: #c0c0c0;
+}
+.tab-ul {
+    padding: 0; 
+    margin: 0 auto;
+    border-bottom: none!important;
+}
+.tab-link.nav-item.react-tabs__tab--selected {
+    color: #2b8d94;
+    background-color: transparent;
+    border-color: transparent transparent #edf6f7;
+    border-bottom: 4px solid !important;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.tab-link { border-bottom: 1px solid !important; }
+
+.nav-link.nav-item{
+    cursor: pointer;
+    color: #2b8d94;
+    font-size: 1.1em;
+    border-color: none;
+    border: none; 
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.react-tabs__tab-panel--selected { margin: 0; }
+
+.react-tabs__tab--disabled{
+    cursor: default!important;
+    color:lightgrey!important;
+    border-color: lightgray;
+}
+
+@media screen and (max-width: 768px) { 
+    .react-tabs__tab-panel--selected { margin: 0; }
+    .tab-ul { border: none; }
+
+    .tab-link.nav-item.react-tabs__tab--selected {
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color: #2b8d94;
+        border-bottom: 1px solid #2b8d94 !important;
+        color: white;
+    } 
+
+    .nav-link.nav-item { font-size: 1.1em; }
+}
+
+.react-datepicker-wrapper, .react-datepicker__input-container {
+    width:100%;
+}
+
+/************************************************************
+        css for details view, CRM system
+
+*************************************************************/
+.note {
+    background: rgb(240, 240, 240);
+    border-radius:5px;
+    display:flex;
+    align-items: flex-start;
+}
+
+
+.contact-persons-container, .activities-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-width: 2px 0 1px 0!important;
+    padding: 25px 15px 15px 15px!important;
+}
+.contact-company-persons-list, .contact-company-activities-list {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px !important;
+}
+
+.contact-company-person {
+    min-width:130px;
+    margin: 0 10px 10px 10px;
+}
+
+.link-contact-person {
+    color: #676a6c;
+    font-weight: bold;
+}
+
+.link-contact-person:hover { color: #19aa8d; }
+
+/************************************************************
+        Styles for DataTable content
+
+*************************************************************/
+.view-person, .view-company { font-size: 1.1em; }
+
+a.view-company:not([href]):not([tabindex]), a.view-person:not([href]):not([tabindex]) {
+    color: #19aa8d!important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.view-company:not([tabindex]), a.view-person:not([tabindex]) {
+    color: #19aa8d!important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.custom-btn {
+    border:none;
+    offset: none;
+    background:transparent;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.button-section {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.ibox-content > #company-table-container {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.fas.fa-info-circle.show-tooltip {
+    margin-left: 10px;
+    color:  #5E5E5E;
+}
+
+/************************************************************
+    Styles for 404 page
+
+************************************************************/
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.page-not-found-header {
+    font-size: 17em;
+    border-bottom: solid 4px #2D8F7B;
+}
+
+.text-page-404 {
+    font-size: 3em;
+}
+
+.text-message-404 {
+    font-size: 13pt;
+    width: 18%;
+    min-width: 350px;
+    text-align: center;
+}
+
+.svg-rectangle-bottom {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top: -65px
+}
+
+@media (min-width: 1900px) {
+    .svg-rectangle-bottom {
+        top: 400px
+    }
+}
+
+@media (max-width: 768px) {
+    .text-message-404 {
+        font-size: 12pt;
+        width: 90%;
+        min-width: 0;
+    }
+    .text-page-404 {
+        font-size: 2em;
+    }
+    .page-not-found-header {
+        font-size: 12em;
+        border-bottom: solid 4px #2D8F7B;
+    }
+    .container-404 {
+        top: -45px;
+    }
+    .svg-rectangle-bottom {
+        top: -45px
+    }
+}

@@ -1,0 +1,93 @@
+
+.compare-table {
+    border: 1px solid #bcbdbe;
+}
+
+.compare-table th[scope=row] {
+    font-weight: 600;
+    background-color: #F3F3F4;
+    border: 1px solid #bcbdbe;
+    text-align: left;
+    padding-left: 15px;
+    width: 250px;
+    max-width: 300px;
+    color: #676a6c;
+}
+
+.fields > th:first-of-type {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.infoToDisplay-container {
+    display: flex; 
+    flex-direction: column;
+    padding: 15px 5px;
+}
+
+.infoToDisplay.cell {
+    border: 1px solid #bcbdbe;
+    max-width: 990px;
+    width: 970px;
+}
+
+.activity-cell-container, .container-contactPerson-table {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.logo-displayer {
+    margin: 15px auto;
+}
+
+.friendly-id-color {
+    color: #9a9b9c;
+}
+
+.person-name-color, .activity-color {
+    color:#676a6c;
+}
+
+.cell {
+    border: 1px solid #bcbdbe;
+    padding-top: 14px!important;
+}
+
+.description-activity {
+    width: 250px;
+}
+
+.th, .td {
+    width: 100%;
+}
+
+.selection-person-compare {
+    max-width: 400px;
+    width: 400px;
+}
+
+.cell > div.form-group {
+    margin-bottom: 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.left-name, .activity-left {
+    margin: 0 100px;
+}
+
+.segments-table, .tags-table {
+    padding: 5px;
+    border: 1px solid #bcbdbe;
+    border-radius: 5px;
+}
+@media (min-width: 2200px) {
+    .activity-cell-container > div.mr-auto {
+        margin-right: 0px !important;
+    }
+    .selection-person-compare {
+        max-width: 600px;
+        width: 600px;
+    }
+
+}

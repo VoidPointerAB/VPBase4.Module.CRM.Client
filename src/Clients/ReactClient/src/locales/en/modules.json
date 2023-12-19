@@ -1,0 +1,44 @@
+{
+    "common": {
+        "Welcome to inspinia": " Welcome in INSPINIA ReactJS Seed Project",
+        "seed-project": "It is an application skeleton for a typical web app. You can use it to quickly bootstrap your webapp projects.",
+        "button": {
+            "logout": "Logout",
+            "save": "Save",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "dismiss": "Dismiss",
+            "delete": "Delete",
+            "remove": "Remove",
+            "copy": "Copy",
+            "edit": "Edit",
+            "add": "Add",
+            "new": "New",
+            "ok": "Ok",
+            "create": "Create",
+            "goBack": "Go back",
+            "close": "Close",
+            "view": "View",
+            "download": "Download",
+            "fetch": "Fetch"
+        },
+        "login": {
+            "labelUserName": "Username",
+            "labelPassword": "Password",
+            "buttonSignIn": "Sign In",
+            "buttonCreateAccount": "Create new account"
+        },
+        "metisMenu": {
+            "overview": "Overview"
+        },
+        "errors": {
+            "failedToFetch": "Unable to fetch data from the server",
+            "defaultError": "An error occured on the server!",
+            "failedToLoad": "An error prevented the data from being loaded"
+        },
+        "noData": {
+            "default": "No data was returned from the server",
+            "entityNotFound": "The requested entity could not be found, it may have been deleted"
+        }
+    }
+}

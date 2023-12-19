@@ -1,0 +1,44 @@
+{
+  "common": {
+    "Welcome to inspinia": " Välkommen till INSPINIA ReactJS Seed Project",
+    "seed-project": "It is an application skeleton for a typical web app. You can use it to quickly bootstrap your webapp projects.",
+    "button": {
+      "logout": "Logga ut",
+      "save": "Spara",
+      "confirm": "Bekräfta",
+      "cancel": "Avbryt",
+      "dismiss": "Avfärda",
+      "delete": "Ta bort",
+      "remove": "Ta bort",
+      "copy": "Kopiera",
+      "edit": "Redigera",
+      "add": "Lägg till",
+      "new": "Ny",
+      "ok": "Ok",
+      "create": "Skapa",
+      "goBack": "Tillbaka",
+      "close": "Stäng",
+      "view": "Visa",
+      "download": "Ladda ner",
+      "fetch": "Hämta"
+    },
+    "login": {
+      "labelUserName": "Användarnamn",
+      "labelPassword": "Lösenord",
+      "buttonSignIn": "Logga in",
+      "buttonCreateAccount": "Skapa nytt konto"
+    },
+    "metisMenu": {
+      "overview": "Översikt"
+    },
+    "errors": {
+      "failedToFetch": "Kunde inte hämta data från servern",
+      "defaultError": "Ett fel uppstod på servern!",
+      "failedToLoad": "Ett fel förhindrar datan att renderas"
+    },
+    "noData": {
+      "default": "Ingen data hämtades från servern",
+      "entityNotFound": "Den efterfrågade resursen kunde inte hittas, den kan ha tagits bort"
+    }
+  }
+}
